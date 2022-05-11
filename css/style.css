@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body { 
+    background-color: #ebebeb;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.section {
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+.logo { 
+    width: 370px;
+    height: 50px;
+}
+
+
+.buscador input{
+    width: 320px;
+    height: 30px;
+    background-color: black;
+    border: 1px solid  white;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: rgb(204, 204, 204);
+    padding-left: 4px;
+
+
+}
+
+.nav {
+    padding-right: 10px;
+    padding-bottom: 16px;
+
+}
+
+.nav__lista { 
+    display: flex;
+    list-style: none;
+    color: white;
+    flex-direction: row;
+}
+
+.nav__item {
+    margin-left: 16px;
+
+}
+
+
+.nav__enlace {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.portada {
+    background-color: rgb(35, 35, 80);
+    min-height: 400px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../imagenes/portada-13.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+ 
+    
+}
+
+.portada__slogan {
+    color: white;
+    margin-left: 3rem;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.titulo {
+    color: rgb(13, 7, 53);
+    text-align: center;
+    margin: 2rem;
+    font-weight: bold;
+}
+
+.lista__productos {
+    display: flex;
+    background-color: rgb(220, 220, 220);
+    justify-content: center;
+    flex-direction: row;
+}
+
+.producto1 {
+    border: 2px solid black;
+    margin: 2rem;
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------- */
+.section__grid__productos { 
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 50px 300px 10px 300px 10px 300px 10px 300px 10px 300px 10px;
+    justify-items: center;
+    gap: 10px;
+    margin: 2rem;
+    padding: 1rem;
+    grid-template-areas:
+        "titulo"
+        "ele1"
+        "."
+        "ele2"
+        "."
+        "."
+        "."
+        "."
+    
+    ;
+}
+
+.section3__flex3 {
+    display: flex;
+    grid-area: ele1;
+    flex-direction: row;
+    grid-area: elemento3;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    background-color: #ebebeb;
+} 
+
+.section2 {
+    display: grid;
+    grid-template-columns: 1000px;
+    grid-template-rows: 50px 300px 50px 50px 300px 50px 50px 300px 50px 50px 300px;
+
+    justify-items: center;
+    gap: 10px;
+    margin: 2rem;
+    padding: 1rem;
+    grid-template-areas:
+        "titulo"
+        "ele1"
+        "."
+        "titulo2"
+        "ele2"
+        "."
+        "titulo3"
+        "ele3"
+    
+    ;
+
+}
+
+.section2__titulo {
+    grid-area: titulo;
+    font-weight: 400;
+}
+
+.section2__flex {
+    display: flex;
+    grid-area: ele1;
+    flex-direction: row;
+}
+
+
+
+
+
+
+.section2__producto {
+    display: flex;
+    border-radius: 3px;
+    height: 220px;
+    width: 160px;
+    min-width: 170px;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+}
+
+.section2__nombreArticulo {
+    font-size: 12px;
+    text-align: center;
+}
+
+.contenedor__imagen {
+    display: flex;
+    height: 120px;
+    width: 120px;
+
+}
+
+.section2__imagen {
+    max-height: 100%;
+    max-width: 100%;
+
+    
+    
+}
+
+.descuento {
+    font-size: 10px;
+    color: green;
+
+}
+
+.precio {
+ font-size: 20px;
+
+}
+
+
+
+
+
+.section2__titulo2 {
+    grid-area: titulo2;
+    font-weight: 400;
+}
+
+.section2__flex2 {
+    grid-area: ele2;
+}
+
+
+
+.section2__titulo3 {
+    grid-area: titulo3;
+    font-weight: 400;
+}
+
+.section2__flex__setup {
+    display: flex;
+    flex-direction: row;
+    grid-area: ele3;
+
+}
+
+.section2__setups {
+    display: flex;
+    height: 200px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-left: 6px;
+
+}
+
+.section2__imagen__setup {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
+
+.contorno {
+    display: flex;
+    background-color: rgb(231, 231, 231);
+    flex-direction: column;
+
+}
+
+
+.ayuda {
+    margin: 10px;
+
+}
+
+
+.preguntasFrecuentes {
+    margin-left: 10px;
+    
+
+
+}
+
+.consulta {
+    border: 2px solid black;
+    margin: 1rem;
+
+}
+
+
+.titulo__consulta {
+    margin-left: 1rem;
+
+}
+
+.contenido {
+    list-style: none;
+    list-style-type: none;
+    
+
+}
+
+
+
+
+
+
+
+
+
+.sec__footer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 300px;
+    
+}
+
+.sec__img {
+    height: 70px;
+    width: 400px;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 1023px) {
+
+    .logo { 
+        width: 270px;
+        height: 40px;
+    }
+
+    .nav__enlace {
+        font-size: 16px;
+    }
+
+    .buscador input{
+        width: 150px;
+        height: 30px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .section {
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+    }
+  
+}
