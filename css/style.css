@@ -39,7 +39,7 @@ body {
 
 .nav {
     padding-right: 10px;
-    padding-bottom: 16px;
+    padding-bottom: 0px;
 
 }
 
@@ -63,12 +63,10 @@ body {
 }
 
 
-
-
-
-
-
-
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
 
 
 
@@ -136,22 +134,13 @@ body {
 /* ---------------------------------------------------------- */
 .section__grid__productos { 
     display: grid;
-    grid-template-columns: 1000px;
-    grid-template-rows: 50px 300px 10px 300px 10px 300px 10px 300px 10px 300px 10px;
+    grid-template-columns: 100vw;
+    grid-template-rows: 50px 680px;
     justify-items: center;
     gap: 10px;
-    margin: 2rem;
-    padding: 1rem;
     grid-template-areas:
         "titulo"
         "ele1"
-        "."
-        "ele2"
-        "."
-        "."
-        "."
-        "."
-    
     ;
 }
 
@@ -173,12 +162,12 @@ body {
 
 .section2 {
     display: grid;
-    grid-template-columns: 1000px;
+    grid-template-columns: 100vw;
     grid-template-rows: 50px 300px 50px 50px 300px 50px 50px 300px 50px 50px 300px;
 
     justify-items: center;
     gap: 10px;
-    margin: 2rem;
+    
     padding: 1rem;
     grid-template-areas:
         "titulo"
@@ -188,7 +177,7 @@ body {
         "ele2"
         "."
         "titulo3"
-        "ele3"
+        "carrusel"
     
     ;
 
@@ -197,25 +186,32 @@ body {
 .section2__titulo {
     grid-area: titulo;
     font-weight: 400;
+    margin-top: 1rem;
 }
 
 .section2__flex {
     display: flex;
     grid-area: ele1;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 
+.container {
+    grid-area: carrusel;
+}
 
-
-
+.carousel-item {
+    height: 600px;
+}
 
 .section2__producto {
     display: flex;
     border-radius: 3px;
     height: 220px;
     width: 160px;
-    min-width: 170px;
+
     margin-left: 10px;
     flex-direction: column;
     align-items: center;
@@ -358,8 +354,8 @@ body {
 }
 
 .sec__img {
-    height: 70px;
-    width: 400px;
+    height: 30px;
+    width: 200px;
 
 }
 
@@ -390,10 +386,12 @@ body {
         width: 150px;
         height: 30px;
     }
-}
 
 
-@media screen and (max-width: 767px) {
+    }
+
+
+@media screen and (max-width: 768px) {
     .section {
         flex-direction: column;
         width: 100%;
