@@ -1,0 +1,67 @@
+.contenido {
+
+    justify-content: center;
+    background-color: #ebebeb;
+} 
+
+.section2 {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 50px 500px 50px 50px 500px 50px 50px 500px 50px 50px 300px;
+
+    justify-items: center;
+    gap: 10px;
+    
+    padding: 1rem;
+    grid-template-areas:
+        "titulo"
+        "ele1"
+        "."
+        "titulo2"
+        "ele2"
+        "."
+        "titulo3"
+        "carrusel"    
+    ;
+
+    &__titulo {
+        grid-area: titulo;
+        font-weight: 400;
+    
+    }
+
+    
+    &__flex {
+        display: flex;
+        grid-area: ele1;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+    &__titulo2 {
+        grid-area: titulo2;
+        font-weight: 400;
+    }
+
+    &__flex2 {
+        grid-area: ele2;
+    }
+
+
+}
+
+
+.color {
+    color: black;
+}
+
+.container {
+    grid-area: carrusel;
+}
+
+.carousel-item {
+    height: 600px;
+}
+

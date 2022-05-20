@@ -1,0 +1,11 @@
+.fondo__fixed {
+
+    height: 500px;
+    width: 100vw;
+    margin-bottom: 15rem;
+    background-image: url(../imagenes/setupfondo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+}

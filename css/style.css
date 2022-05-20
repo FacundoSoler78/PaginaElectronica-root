@@ -99,56 +99,6 @@ ul {
 
 
 
-
-
-/* ------------------------------------------------------------------------- */
-
-
-
-
-
-.titulo {
-    color: rgb(13, 7, 53);
-    text-align: center;
-    margin: 2rem;
-    font-weight: bold;
-}
-
-.lista__productos {
-    display: flex;
-    background-color: rgb(220, 220, 220);
-    justify-content: center;
-    flex-direction: row;
-    
-}
-
-.producto1 {
-    border: 2px solid black;
-    margin: 2rem;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255);
-
-}
-
-
-
-
-
-
-/* ---------------------------------------------------------- */
-.section__grid__productos { 
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 50px 680px;
-    justify-items: center;
-    gap: 10px;
-    grid-template-areas:
-        "titulo"
-        "ele1"
-    ;
-}
-
-
 /* ---------------------------------------------------------- */
 
 .contenido {

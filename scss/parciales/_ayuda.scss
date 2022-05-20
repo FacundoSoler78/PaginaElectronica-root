@@ -1,0 +1,63 @@
+
+.ayuda {
+    margin: 10px;
+
+}
+
+
+.preguntasFrecuentes {
+    margin-left: 10px;
+    
+
+
+}
+
+
+.consulta {
+    border: 2px solid black;
+    margin: 1rem;
+
+}
+
+
+.titulo__consulta {
+    margin-left: 1rem;
+
+}
+
+.contenido {
+    list-style: none;
+    list-style-type: none;
+    
+
+}
+
+
+
+.row {
+    margin: 2rem;
+}
+
+
+
+.div__ayuda {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(202, 202, 202);
+    align-items: center;
+
+    .div__encuesta {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+}
+
+
+.background {
+    background: rgb(74, 72, 89);
+    border-radius: 20px;
+
+}

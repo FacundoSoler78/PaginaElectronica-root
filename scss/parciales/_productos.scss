@@ -1,0 +1,49 @@
+.section2__producto {
+    display: flex;
+    border-radius: 3px;
+    height: 220px;
+    width: 160px;
+    margin-left: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    transition: transform 0.5s;
+}
+
+.section2__producto:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.section2__nombreArticulo {
+    font-size: 12px;
+    text-align: center;
+}
+
+.contenedor__imagen {
+    display: flex;
+    height: 120px;
+    width: 120px;
+
+}
+
+.section2__imagen {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+
+    
+    
+}
+
+.descuento {
+    font-size: 10px;
+    color: green;
+
+}
+
+.precio {
+ font-size: 20px;
+
+}

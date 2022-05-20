@@ -1,0 +1,32 @@
+
+.section2__flex__setup {
+    display: flex;
+    flex-direction: row;
+    grid-area: ele3;
+
+    .section2__setups {
+        display: flex;
+        height: 200px;
+        width: 270px;
+        overflow: hidden;
+        border-radius: 6px;
+        margin-left: 6px;
+    
+    }
+
+    .section2__imagen__setup {
+        width: 100%;
+        object-fit: cover;
+    
+    }
+    
+}
+
+
+
+.carousel__imagen {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
