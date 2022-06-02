@@ -1,0 +1,22 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Hola mundo\" && exit 1",
+    "build": "node-sass --include-path scss scss/style.scss css/style.css",
+    "watch": "nodemon -e scss -x \"npm run build\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FacundoSoler78/PaginaElectronica-root.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FacundoSoler78/PaginaElectronica-root/issues"
+  },
+  "homepage": "https://github.com/FacundoSoler78/PaginaElectronica-root#readme"
+}

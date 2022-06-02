@@ -1,3 +1,10 @@
+$mapa2: (
+    medida: 120px,
+    flex: flex,
+    tamañofuente: 12px
+);
+
+
 .section2__producto {
     display: flex;
     border-radius: 3px;
@@ -17,14 +24,14 @@
 }
 
 .section2__nombreArticulo {
-    font-size: 12px;
+    font-size: map-get($mapa2, tamañofuente);
     text-align: center;
 }
 
 .contenedor__imagen {
     display: flex;
-    height: 120px;
-    width: 120px;
+    height: map-get($mapa2, medida);
+    width: map-get($mapa2, medida);
 
 }
 

@@ -1,3 +1,9 @@
+$mapa1: (
+    color: #2941AA,
+    padding: 1rem
+);
+
+
 .genders {
     min-height: 300px;
     padding-bottom: 10rem;
@@ -10,16 +16,16 @@
 
     &__title {
         font-size: 30px;
-        padding: 2rem;
+        padding: map-get($mapa1, padding) * 2;
         text-align: center;
     }
 
     &__flex {
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: map-get($mapa1, padding);
         overflow: auto;
-        scrollbar-color: #2941AA;
+        scrollbar-color: map-get($mapa1, color);
         scrollbar-width: none;
     }
 
@@ -28,7 +34,7 @@
     }
 
     &__flex::-webkit-scrollbar-thumb {
-        background-color: #2941AA;
+        background-color: map-get($mapa1, color);
     }
 
     &__flex::-webkit-scrollbar {

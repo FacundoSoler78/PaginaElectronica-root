@@ -40,13 +40,12 @@
 
 
 
-
-    @include generarFlex(column, center)
-
-
+.div__ayuda {
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     background-color: rgb(202, 202, 202);
-
+    align-items: center;
 
     .div__encuesta {
         display: flex;
