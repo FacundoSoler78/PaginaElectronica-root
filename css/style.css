@@ -69,11 +69,24 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 230px; }
+  min-height: 230px; }
 
 .sec__img {
   height: 30px;
   width: 200px; }
+
+.imgLogo {
+  height: 50px;
+  width: 370px; }
+
+.footerTitulo {
+  font-size: 25px;
+  color: white;
+  justify-self: center; }
+
+.texto {
+  color: white;
+  font-size: 14px; }
 
 .section {
   background-color: black;
@@ -133,41 +146,40 @@ ul {
     margin-left: 3rem;
     font-size: 25px; }
 
-.contenido {
-  justify-content: center;
-  background-color: #ebebeb; }
-
 .section2 {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 50px 500px 50px 50px 500px 50px 50px 500px 50px 50px 300px;
+  grid-template-rows: 500px 500px 600px;
   justify-items: center;
   gap: 10px;
-  padding: 1rem;
-  grid-template-areas: "titulo" "ele1" "." "titulo2" "ele2" "." "titulo3" "carrusel"; }
-  .section2__titulo {
-    grid-area: titulo;
-    font-weight: 400; }
-  .section2__flex {
-    display: flex;
-    grid-area: ele1;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .section2__titulo2 {
-    grid-area: titulo2;
-    font-weight: 400; }
-  .section2__flex2 {
-    grid-area: ele2; }
+  grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5"; }
+
+.posicion1 {
+  grid-area: ele1; }
+
+.posicion2 {
+  grid-area: ele2; }
 
 .color {
   color: black; }
 
-.container {
-  grid-area: carrusel; }
+.posicion3 {
+  grid-area: ele3; }
 
 .carousel-item {
   height: 600px; }
+
+.imgLogo {
+  height: 50px;
+  width: 370px; }
+
+.footerTitulo {
+  font-size: 25px;
+  color: white; }
+
+.texto {
+  color: white;
+  font-size: 14px; }
 
 .genders {
   min-height: 300px;
@@ -271,12 +283,17 @@ body {
     width: 100%;
     height: 150px; } }
 
-@media screen and (max-width: 508px) {
-  .section2 {
-    grid-template-rows: 50px 700px 50px 50px 700px 50px 50px 500px 50px 50px 300px; } }
-
 @media screen and (max-width: 768px) {
   .section {
     flex-direction: column;
     width: 100%;
     height: 150px; } }
+
+@media screen and (max-width: 508px) {
+  .section2 {
+    grid-template-rows: 50px 700px 50px 50px 700px 50px 50px 500px 50px 50px 300px; }
+  .imgLogo {
+    height: 30px;
+    width: 200px; }
+  .nav__enlace {
+    font-size: 10px; } }

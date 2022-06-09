@@ -28,12 +28,6 @@
   
 }
 
-@media screen and (max-width: 508px) {
-    .section2 {
-        grid-template-rows: 50px 700px 50px 50px 700px 50px 50px 500px 50px 50px 300px;
-    }
-  
-}
 
 @media screen and (max-width: 768px) {
     .section {
@@ -42,4 +36,19 @@
         height: 150px;
     }
   
+}
+
+@media screen and (max-width: 508px) {
+    .section2 {
+        grid-template-rows: 50px 700px 50px 50px 700px 50px 50px 500px 50px 50px 300px;
+    }
+    
+    .imgLogo {
+    height: 30px;
+    width: 200px;
+
+    }
+  .nav__enlace{
+      font-size: 10px;
+  }
 }
