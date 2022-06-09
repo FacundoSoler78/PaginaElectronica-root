@@ -152,7 +152,11 @@ ul {
   grid-template-rows: 500px 500px 600px;
   justify-items: center;
   gap: 10px;
-  grid-template-areas: "ele1" "ele2" "ele3" "ele4" "ele5"; }
+  grid-template-areas: "ele1"
+ "ele2"
+ "ele3"
+ "ele4"
+ "ele5"; }
 
 .posicion1 {
   grid-area: ele1; }
@@ -183,7 +187,7 @@ ul {
 
 .genders {
   min-height: 300px;
-  padding-bottom: 10rem; }
+  padding-bottom: 4rem; }
   .genders__contenedor {
     max-width: 1200px;
     margin: 0 auto; }
